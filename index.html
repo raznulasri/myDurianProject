@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borang Maklumat Kenderaan</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+
+        .form-container h2 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 14px;
+        }
+
+        .form-group input:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: #007bff;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>Borang Pendaftaran</h2>
+        <form action="#" method="POST">
+            
+            <!-- Nama -->
+            <div class="form-group">
+                <label for="nama">Nama Penuh:</label>
+                <input type="text" id="nama" name="nama" placeholder="Cth: Ahmad bin Ali" required>
+            </div>
+
+            <!-- Nombor Telefon -->
+            <div class="form-group">
+                <label for="telefon">Nombor Telefon:</label>
+                <input type="tel" id="telefon" name="telefon" placeholder="Cth: 0123456789" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">E-mel:</label>
+                <input type="email" id="email" name="email" placeholder="Cth: ahmad@example.com" required>
+            </div>
+
+            <!-- Nombor Plat Kereta -->
+            <div class="form-group">
+                <label for="plat">Nombor Plat Kereta:</label>
+                <input type="text" id="plat" name="plat" placeholder="Cth: WXA 1234" required>
+            </div>
+
+            <!-- Butang Submit -->
+            <button type="submit" class="submit-btn">Hantar (Submit)</button>
+            
+        </form>
+    </div>
+
+</body>
+</html>
